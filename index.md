@@ -10,49 +10,41 @@
 	<!-- start main body -->
 	<body>
 		
-		<title> For-aoife-beefa</title>							<!-- set the title of the webpage that will appear in the tab -->
+		<title> login</title>							<!-- set the title of the webpage that will appear in the tab -->
 				
 		<!-- new header section -->
 		<header>
 
-			<h1> I made this website because I lub u (uwu) </h> 
+			<h1 style="width:30%; height:5%; position:absolute; top:15%; left:35%;"> Welcome! </h> 				<!-- set main heading on page -->
+			
 		</header>
-				
-		<!-- new area for uwu image -->
-		<div class="div1">
-
-			<img src = "Images/uwu.jpg" style="position:relative; top:4%; left:4%; width:90%; height:90%;" class="uwuimg">
-		</div>
-
-		<!-- new area for unordered list starting at 848px ending at 1372px -->
-		<div class="div2">
-				
-			<!-- create unordered list -->
-			<ul style ="color:#404040; font-family:Arial Black, Gadget, sans-serif; font-size:xx-large;">
-					
-				<li> <a href = "Web Pages/memes.html">Latest Meme</a> </li>
-				<li> <a href = "Web Pages/do-not-click.html">Don't Click</a> </li>
-				
-			</ul>
-
-			<!-- create new paragprah -->
-			<p style ="color:#FFFFFF; font-family:Arial Black, Gadget, sans-serif; position:absolute; bottom:4%;">More Coming Soon... Stay Tuned xD</p>
-			
-			
-		</div>
 		
+		<!-- new section for log in area -->
+		<div style="position:absolute; width:30%; height:50%; background:#89C7EB; top:21.5%; left:35%; border-radius: 0 0 15% 15%;" id="logInArea">
 		
-		<!-- new area for buttons starting at 1372px ending at 1652px -->
-		<div class="div3">
-		
-			<!-- place buttons inside area 3 -->
-			<a href="Web Pages/art-gallery.html"><button style="top:0%;" class="homebuttons" >Art Gallery</button></a>
+			<p class="mainparagraph"> Please login in or sign up </p><br>
+			<p class="mainparagraph" style="display:inline; position:relative; left:12%; width:10%;">Username:</p><br><br>
+			<p class="mainparagraph" style="display:inline; position:relative; left:12%; width:10%;">Password:</p><br><br>
 			
-			<a href="Web Pages/psa.html"><button style="top:34%;" class="homebuttons" >Urgent PSA</button></a>
+			<!-- sub area for input boxes -->
+			<div style="position:absolute; width:50%; height:15%; top:14.5%; left:37%;">
 			
-			<a href="Web Pages/nice-pics.html"><button style="top:68%;" class="homebuttons" >Nice Pics</button></a>
+			<input type="text" placeholder="username" class="logininput" id="usernameInput"> <br><br>
+			<input type="password" placeholder="password" class="logininput" id="passwordInput"> <br>
+			
+			</div><br><br><br>
+			
+			<button class="loginbuttons" style="left:35%;" onclick="checkCredentials()">Login</button><br><br>
+			<button class="loginbuttons" style="left:35%;" onclick="signUp()">Sign Up</button><br><br>
+			
+			<p class="mainparagraph" style="color:red;" id="loginMessage"></p><br>
 		
 		</div>
-
+		
+		<!-- include script -->
+		<script src="Scripts/main script.js"></script>
+		
 	</body>
+		
 </html>
+		
