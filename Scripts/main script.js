@@ -31,7 +31,7 @@
 			}
 			else{
 				
-				document.getElementById("loginMessage").innerHTML = "Username is incorrect";
+				document.getElementById("loginMessage").innerHTML = "Username " + currentUsername " is incorrect";
 			}
 
 	}
