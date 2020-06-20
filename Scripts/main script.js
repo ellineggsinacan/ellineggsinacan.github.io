@@ -19,7 +19,7 @@
 					i = savedUsernames.length;
 					
 					//redirect to homepage
-					window.location.replace("../HTML code/homepage.html");
+					window.location.replace("../homepage.html");
 					
 				 }
 				 else{
