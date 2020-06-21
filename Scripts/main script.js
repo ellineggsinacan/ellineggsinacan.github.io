@@ -32,10 +32,8 @@ function checkCredentials(){ 		//Login button pressed - check whether credential
 		// check if username matches array content: if true, check password. If false, display error message.
 			 if (currentUsername == objUsers[i].username && currentPassword == objUsers[i].password){
 					
-				document.getElementById("loginMessage").innerHTML = "login success";
-					
-					//redirect to homepage
-					//window.location.replace("../homepage.html");
+				//redirect to homepage
+				window.location.replace("../homepage.html");
 					
 				return
 			}
