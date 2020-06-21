@@ -2,65 +2,70 @@ body{
 	width:100%;
 	height:100%;
 }
-header{
-	width:99%;
+.heading{
+	width:105%;
+	max-width:1920px;
+	min-width:488px;
+	margin-left:-8px;
+	overflow:hidden;
+	margin-top:-8px;
+	height:10%;
+	background-color:#d7dee0;
+	border-radius:50% 50% 0 0;
 }
 h1{
 	color:#404040; 
-	background-color:#d7dee0;
 	font-family:Arial Black, Gadget, sans-serif; 
 	font-size:32px;
 	text-align:center;
-	border: 20px;
-	border-radius: 25px 25px 0 0;
-	width:100%;
-	height:20%;
+	height:80%;
 }
 .tabs{
 	position:absolute;
-	top:6.6%;
-	width:99%;
-	height:10%;
+	top:4;
+	width:105%;
+	max-width:1920px;
+	min-width:488px;
+	margin-left:-8px;
+	overflow:hidden;
+	height:5%;
 	background:#d7dee0;
 }
-.topsection{
+.tabbuttons{
+	text-align: center;
+	width: 25%;
+	border-top: solid #b7c4c8 2px;
+	border-left: solid #b7c4c8 2px;
+	border:right: solid #b7c4c8 2px;
+	background-color: #b7c4c8;
+	color:#404040;
+	font-family:Arial Black, Gadget, sans-serif;
+}
+.mainarea{
 	position:absolute;
-	top:16%;
-	height:82%;
-}
-.indextop1{
-	border:5px;
-	width: 49.7%; 
-	background:linear-gradient(90deg, #89C7EB, #518cad);
-}
-.indextop2{
-	left:50%;
-	border:5px;
-	background:linear-gradient(90deg,#518cad,#375c70);
-	width:30%;
-}
-.indextop3{
-	left:80%;
-	border:5px;
-	background:linear-gradient(90deg,#375c70,#243d4a);
-	width: 19.45%; 
-}
-.uwuimg{
-	border: solid #404040 5px;
-	border-radius: 40% 40% 40% 40%;
-}
+	top:10.5%;
+	height:90%;
+	max-height:1080px;
+	min-height: 728px;
+	width:105%;
+	max-width:1920px;
+	min-width:488px;
+	margin-left:-8px;
+	overflow:hidden;
+	background:linear-gradient(90deg, #89C7EB, #243d4a);
+	border-top: solid #FFFFFF 2px;
+} 
 .homebuttons{
-	margin: 10% 0 10% 0;
+	margin: 10% 10% 10% 10%;
 	position:absolute;
-	left:4%;
 	color:#404040;
 	background-color:white;
 	font-family:Arial Black, Gadget, sans-serif;
 	font-size: 32px;
 	font-style:center;
-	border-radius:25%;
-	width: 85%; 
-	height: 25%;
+	border-radius:20%;
+	width: 80%; 
+	height: 13.3%;
 }
 .mainparagraph{
 	color:#404040; 
@@ -68,26 +73,21 @@ h1{
 	text-align:center;
 }
 .imageart{
-	margin-top: 3%;
-	margin-right:2.25%;
-	position:relative;
-	width:30%;
+	margin-top: 1%;
+	margin-left:4%;
+	margin-right:4%;
+	position:absolute;
+	width:25%;
 	height:60%;
 	border-radius:10%;
 }
 }
 .imagecaption{
-	position:relative;
-	top: 5%;
-	margin-right:14%;
+	position:absolute;
 	width:30%;
 	height:10%;
-	font-size:16px;
+	font-size:20px;
 	display:inline;
-}
-.divpics{
-	width:99%;
-	background:linear-gradient(90deg, #89C7EB, #518cad);
 }
 .nicepics{
 	position:absolute;
