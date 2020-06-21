@@ -33,7 +33,7 @@ function checkCredentials(){ 		//Login button pressed - check whether credential
 			 if (currentUsername == objUsers[i].username && currentPassword == objUsers[i].password){
 					
 				//redirect to homepage
-				window.location.replace("../homepage.html");
+				window.location.replace("homepage.html");
 					
 				return
 			}
