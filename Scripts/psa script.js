@@ -1,7 +1,7 @@
 
 document.getElementById("artGalleryTab").addEventListener("click", artGallery);
 document.getElementById("homeTab").addEventListener("click", home);
-document.getElementById("gamesTab").addEventListener("click", games);
+document.getElementById("appsTab").addEventListener("click", apps);
 
  function artGallery(){
 	 window.location.href = "art-gallery.html";
@@ -11,6 +11,6 @@ document.getElementById("gamesTab").addEventListener("click", games);
 	 window.location.href = "../homepage.html";
  }
  
-  function games(){
-	 window.location.href = "games.html";
+  function apps(){
+	 window.location.href = "apps.html";
  }

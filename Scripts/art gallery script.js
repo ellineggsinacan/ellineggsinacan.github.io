@@ -1,7 +1,7 @@
 
 document.getElementById("homeTab").addEventListener("click", home);
 document.getElementById("psaTab").addEventListener("click", psa);
-document.getElementById("gamesTab").addEventListener("click", games);
+document.getElementById("appsTab").addEventListener("click", apps);
 
  function home(){
 	 window.location.href = "../homepage.html";
@@ -11,6 +11,6 @@ document.getElementById("gamesTab").addEventListener("click", games);
 	 window.location.href = "psa.html";
  }
  
-   function games(){
-	 window.location.href = "games.html";
+   function apps(){
+	 window.location.href = "apps.html";
  }

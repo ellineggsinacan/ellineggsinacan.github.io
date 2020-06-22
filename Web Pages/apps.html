@@ -15,7 +15,7 @@
 		<!-- new heading section -->
 		<div class="heading">
 
-			<h1> Games </h> 				<!-- set main heading on page -->
+			<h1> Apps </h> 				<!-- set main heading on page -->
 			
 		</div>
 		
@@ -26,7 +26,12 @@
 	    <li class="tabbuttons"><a data-toggle="tab" id="homeTab">Home</a></li>
 	    <li class="tabbuttons"><a data-toggle="tab" id="artGalleryTab">Art Gallery</a></li>
 	    <li class="tabbuttons"><a data-toggle="tab" id="psaTab">Urgent PSA</a></li>
-		<li class="active tabbuttons"><a data-toggle="tab" id="gamesTab">Games</a></li>
+		<li class="active dropdown tabbuttons">
+		<a class="dropdown-toggle" data-toggle="dropdown" id="appsTab">Apps<span class="caret"></span></a>
+			<ul class="dropdown-menu subTabButtons">
+			<li><a id="calculatorSubmenu">Simple Calculator</a></li>                       
+			</ul>
+		</li>
 	    </ul>
 		
 		</div>
@@ -34,13 +39,35 @@
 		<!-- new main page area -->
 		<div class="mainarea">
 		
-			<p class="mainparagraph" style="font-size:32px;">This is where all the games and apps will be located. </p>
+			<p class="mainparagraph" style="font-size:32px;">Browse through the different applications that I've created! </p>
+		
+			<!-- area for app icons -->
+			<div style="position:absolute; width:100%; height:30%;">
+				
+				<img src = "../Images/mycalculator.png" style="border-radius: 20% 20% 20% 20%; width:10%; height:100%; left:10%; position:absolute;">
+				
+			</div>
+			
+			<!-- new area for app icon links -->
+			<div style="position:absolute; width:100%; height:10%; top:40%;">
+			
+				<a class="mainparagraph" href = "calculator.html" style="text-align:left; font-size:24px; left:8%; position:absolute;">Simple Calculator</a>
+			
+			</div>
+			
+		</div>
+			
+			<!-- <ul class="mainparagraph" style="text-align:left; font-size:32px;"> -->
+			
+			<!-- <li><a href= "calculator.html">A Simple Calculator</a></li> -->
+			
+			<!-- </ul> -->
 		
 		</div>
 		
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		  <script src="../Scripts/games script.js"></script>
+		  <script src="../Scripts/apps page script.js"></script>
 				
 	</body>
 </html>

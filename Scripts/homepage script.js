@@ -1,7 +1,7 @@
 
 document.getElementById("artGalleryTab").addEventListener("click", artGallery);
 document.getElementById("psaTab").addEventListener("click", psa);
-document.getElementById("gamesTab").addEventListener("click", games);
+document.getElementById("appsTab").addEventListener("click", apps);
 
  function artGallery(){
 	 window.location.href = "Web Pages/art-gallery.html";
@@ -11,6 +11,6 @@ document.getElementById("gamesTab").addEventListener("click", games);
 	 window.location.href = "Web Pages/psa.html";
  }
  
-  function games(){
-	 window.location.href = "Web Pages/games.html";
+  function apps(){
+	 window.location.href = "Web Pages/apps.html";
  }
