@@ -1,7 +1,12 @@
 document.getElementById("artGalleryTab").addEventListener("click", artGallery);
 document.getElementById("psaTab").addEventListener("click", psa);
 document.getElementById("homeTab").addEventListener("click", home);
+document.getElementById("hangmanSubmenu").addEventListener("click", hangman);
 
+ function hangman(){
+	 window.location.href = "hangman.html";
+ }
+ 
  function artGallery(){
 	 window.location.href = "art-gallery.html";
  }
