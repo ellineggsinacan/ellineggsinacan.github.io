@@ -1,5 +1,5 @@
-document.getElementById("artGalleryTab").addEventListener("click", artGallery);
-document.getElementById("psaTab").addEventListener("click", psa);
+document.getElementById("cvTab").addEventListener("click", cv);
+document.getElementById("downloadsTab").addEventListener("click", downloads);
 document.getElementById("homeTab").addEventListener("click", home);
 document.getElementById("hangmanSubmenu").addEventListener("click", hangman);
 
@@ -7,12 +7,12 @@ document.getElementById("hangmanSubmenu").addEventListener("click", hangman);
 	 window.location.href = "hangman.html";
  }
  
- function artGallery(){
-	 window.location.href = "art-gallery.html";
+ function cv(){
+	 window.location.href = "cv.html";
  }
  
-  function psa(){
-	 window.location.href = "psa.html";
+  function downloads(){
+	 window.location.href = "downloads.html";
  }
  
   function home(){

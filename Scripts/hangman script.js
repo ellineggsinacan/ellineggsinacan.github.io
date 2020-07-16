@@ -1,6 +1,6 @@
-document.getElementById("artGalleryTab").addEventListener("click", artGallery);
+document.getElementById("cvTab").addEventListener("click", cv);
 document.getElementById("calculatorSubmenu").addEventListener("click", calculator);
-document.getElementById("psaTab").addEventListener("click", psa);
+document.getElementById("downloadsTab").addEventListener("click", downloads);
 document.getElementById("homeTab").addEventListener("click", home);
 document.getElementById("famousPlacesButton").addEventListener("click", famousPlaces);
 document.getElementById("enterButton").addEventListener("click", checkLetter);
@@ -26,12 +26,12 @@ var incorrectHistory = "";
 	 window.location.href = "calculator.html";
  }
  
- function artGallery(){
-	 window.location.href = "art-gallery.html";
+ function cv(){
+	 window.location.href = "cv.html";
  }
  
-  function psa(){
-	 window.location.href = "psa.html";
+  function downloads(){
+	 window.location.href = "downloads.html";
  }
  
   function home(){

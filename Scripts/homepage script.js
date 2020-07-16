@@ -1,16 +1,16 @@
 
-document.getElementById("artGalleryTab").addEventListener("click", artGallery);
-document.getElementById("psaTab").addEventListener("click", psa);
-document.getElementById("appsTab").addEventListener("click", apps);
+document.getElementById("cvTab").addEventListener("click", cv);
+document.getElementById("downloadsTab").addEventListener("click", downloads);
+document.getElementById("miniProjectsTab").addEventListener("click", miniProjects);
 
- function artGallery(){
-	 window.location.href = "Web Pages/art-gallery.html";
+ function cv(){
+	 window.location.href = "Web Pages/cv.html";
  }
  
-  function psa(){
-	 window.location.href = "Web Pages/psa.html";
+  function downloads(){
+	 window.location.href = "Web Pages/downloads.html";
  }
  
-  function apps(){
-	 window.location.href = "Web Pages/apps.html";
+  function miniProjects(){
+	 window.location.href = "Web Pages/mini projects.html";
  }
