@@ -3,7 +3,7 @@ document.getElementById("cvTab").addEventListener("click", cv);
 document.getElementById("miniProjectsTab").addEventListener("click", miniProjects);
 
  function home(){
-	 window.location.href = "../homepage.html";
+	 window.location.href = "../index.html";
  }
  
   function cv(){

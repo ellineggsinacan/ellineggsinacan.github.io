@@ -35,7 +35,7 @@ var incorrectHistory = "";
  }
  
   function home(){
-	 window.location.href = "../homepage.html";
+	 window.location.href = "../index.html";
  }
  
  function phrases(){

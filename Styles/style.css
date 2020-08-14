@@ -74,20 +74,6 @@ h1{
 	text-align:center;
 }
 
-.logininput{
-	position:relative;
-	width:100%;
-	height:35%;
-	border:none;
-}
-.loginbuttons{
-	font-family:Arial Black, Gadget, sans-serif;
-	position:relative;
-	color:#404040;
-	width:30%;
-	height:10%;
-	border-radius:10%;
-}
 .calculatorSolarPanelTexture{
 	position:absolute; 
 	width:2%; 
@@ -265,6 +251,24 @@ h1{
   color: #ffffff;
   transform: rotateY(180deg);
 }	
-	
-	
+
+/* labels for feedback form on homepage */	
+.formLabel
+{
+	width:30%; 
+	left:5%; 
+	position: absolute; 
+	display:inline;
+	text-align:left;
+}
+
+/* input fields for feedback form on homepage */
+.formInput
+{
+	width:50%;
+	left:30%;
+	position:absolute;
+	border: none;
+	color:#404040;
+}
 	

@@ -14,7 +14,7 @@ document.getElementById("hangmanSubmenu").addEventListener("click", hangman);
  }
  
   function home(){
-	 window.location.href = "../homepage.html";
+	 window.location.href = "../index.html";
  }
  
  function calculator(){

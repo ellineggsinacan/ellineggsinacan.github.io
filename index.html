@@ -1,76 +1,110 @@
-<!-- my first attempt at a website. This will be the homepage -->
-<!-- page pixels start at left 8px end at left 1652px -->
+<!-- This is the homepage for my portfolio -->
+
+<?php
+  $first_name = $_POST['fname'];
+  $last_name = $_POST['lname'];
+  $visitor_email = $_POST['email'];
+  $message = $_POST['message'];
+  
+ $email_from = 'ellineggsinacan@gmail.com';
+ $email_subject = "Feedback received on your website";
+  $email_body = "You have received a new message from the user $first_name $last_name.\n".
+                            "Here is the message:\n $message".
+							
+   $to = "ellineggsinacan@gmail.com";
+   $headers = "From: $email_from \r\n";
+   $headers .= "Reply-To: $visitor_email \r\n";
+   
+   mail($to,$email_subject,$email_body,$headers);
+?>
 
 <!doctype html>													<!-- use latest version of html-->
-<html>
+<html lang="en">
 	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="Styles/style.css" />		<!-- link style sheet for element styles -->
 	</head>
 		
 	<!-- start main body -->
 	<body>
 		
-		<title> login</title>							<!-- set the title of the webpage that will appear in the tab -->
+		<title> Ellin's Portfolio</title>							<!-- set the title of the webpage that will appear in the tab -->
 				
-		<!-- new header section -->
-		<header>
+		<!-- new heading section -->
+		<div class="heading">
 
-			<h1 style="width:30%; min-width:488px; max-width:576px; max-height:153.6px; min-height:61.44px; height:8%; position:absolute; top:13%; left:35%; background-color:#FFA62B; border-radius:35% 35% 0 0;"> Welcome! </h> 				<!-- set main heading on page -->
+			<h1> Portfolio Homepage </h> 				<!-- set main heading on page -->
 			
-		</header>
-		
-		<!-- new section for log in area -->
-		<div style="position:absolute; width:30%; min-width:488px; max-width:576px; max-height:960px; min-height:384px; height:50%; background:#489FB5; top:23%; left:35%; border-radius: 0 0 15% 15%;" id="logInArea">
-		
-			<p class="mainparagraph" style="font-size:22px;"> Please login in or sign up </p><br>
-			
-			<!-- sub area for username and password labels -->
-			<div style="position:absolute; width:50%; height:15%; top:14.5%; max-width:288px; min-width:244px; max-height:144px; min-height:57.6px;">
-			
-			<p class="mainparagraph" style="display:inline; position:relative; left:35%; font-size:18px;">Username:</p><br><br>
-			<p class="mainparagraph" style="display:inline; position:relative; left:35%;font-size:18px;">Password:</p><br><br>
-			
-			</div>
-			
-			<!-- sub area for input boxes -->
-			<div style="position:absolute; width:50%; height:15%; top:14.5%; left:50%; max-width:288px; min-width:244px; max-height:144px; min-height:57.6px;">
-			
-			<input type="text" placeholder="username" class="logininput" id="usernameInput" style="width:80%;"> <br><br>
-			<input type="password" placeholder="password" class="logininput" id="passwordInput" style="width:80%;"> <br>
-			
-			</div><br><br><br>
-			
-			<!-- sub area for login/sign up buttons -->
-			<div style=" position:absolute; top:40%; height:25%; width:100%; max-width:576px; min-width:488px; max-height:240px; min-height:96px;">
-			
-			<button class="loginbuttons mainparagraph" style="width:35%; height:40%; left:32.5%;" id="loginButton">Login</button><br><br>
-			<button class="loginbuttons mainparagraph" style="width:35%; height:40%; left:32.5%;" id="signupButton">Sign Up</button><br><br>
-			
-			</div>
-			
-			<!-- new area for login in message at the bottom -->
-			<div style="position: absolute; top: 70%; width:100%; height: 20%; max-width:576px; min-width:488px; max-height:192px; min-height:76.8px;">
-			
-			<p class="mainparagraph" style="color:red;" id="loginMessage"></p><br>
-			
-			</div>
-			
-		
 		</div>
 		
+		<!-- new area for tab controls -->
+		<div class="tabs">
+		
+		<ul class="nav nav-tabs" style="position: absolute; width:100%; height:100%;">
+	    <li class="active tabbuttons"><a data-toggle="tab" id="homeTab">Home</a></li>
+	    <li class="tabbuttons"><a data-toggle="tab" id="cvTab">CV</a></li>
+	    <li class="tabbuttons"><a data-toggle="tab" id="downloadsTab">Downloads</a></li>
+		<li class="tabbuttons"><a data-toggle="tab" id="miniProjectsTab">Mini Projects</a></li>
+	    </ul>
+		
+		</div>
+				
+		<!-- new main page area -->
+		<div class="mainarea">
+		
+			<!-- new area for image -->
+			<div style="position:absolute; width: 20%; height:30%;">
+
+				<img src = "Images/Ellin.png" style="position:absolute; top:5%; left:5%; width:90%; height:90%; border: solid #EDE7E3 2px; border-radius: 50% 50% 50% 50%;">
+				
+			</div>
+
+			<!-- new area for about me/descrption -->
+			<div style="position:absolute; left:20%; width:80%; height:30%; font-size:20px;">
+			
+				<p class="mainparagraph" style=" position: absolute; top: 5%;">Hi, I'm Ellin, a BEng Electrical and Electronic Engineering student. I've spent some time developing an online portfolio to showcase some of my engineering adventures.<br><br>This website is an ongoing project, so some areas are incomplete for now. I plan to develop smaller coding projects on the website directly, make some of my external code available for download, and provide some additional information about myself. Everything you see on this website has been coded by myself in HTML and JavaScript. However, I've used other languages in my code that's been bundled into an executable.<br><br>Thanks for taking the time to browse!</p>
+					
+
+				
+			</div>
+			
+			<!-- new area for feedback form -->
+			<div class="mainparagraph" style="font-size:22px; position:absolute; left:35%; height:10%; top:35%; width:30%; font-weight:bold; text-align:center;" >Feedback Form:</div>
+			
+			
+			<div style="position:absolute; left: 30%; width:40%; height:50%; top:40%;">
+			  <form  method="post" enctype="text/plain" class="mainparagraph" style="position:absolute; width:100%; height:100%;background-color:#FFA62B;">
+
+				<label for="fname" class="formLabel" style="top:2%;">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name.." class="formInput" style="top:2%;">
+				<br><br>
+				<label for="lname" class="formLabel">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name.." class="formInput">
+				<br><br>
+				<label for="email" class="formLabel">E-mail</label>
+				<input id="email" name="email" placeholder="Your e-mail address.." class="formInput">
+				<br><br>
+				<label for="message" class="formLabel">Message</label>
+				<textarea id="message" name="message" placeholder="If you'd like to contact me to offer some suggestions or provide feedback, please submit this form." class="formInput" style="height:60%; width:65%;"></textarea>
+
+				<input type="submit" value="Submit" style="position:absolute; top:90%; width:20%; left:40%; background-color:#489FB5; font-weight:bold;">
+
+			  </form>
+			</div>
+			
 		<!-- new area for bottom bar -->
-		<div class="bottomBar">
+			<div class="bottomBar">
 			
-			<a href="https://www.linkedin.com/in/ellin-anegkana-60400a190/"><img src="Images/linkedin.png" class="linkedin" id="linkedin"></a>
-			<p class="mainparagraph" style="font-size:16px; text-align:right; right:4.5%; top:30%; position:absolute;">Check out my LinkedIn profile:</p>
+				<a href="https://www.linkedin.com/in/ellin-anegkana-60400a190/"><img src="Images/linkedin.png" class="linkedin" id="linkedin"></a>
+				<p class="mainparagraph" style="font-size:16px; text-align:right; right:4.5%; top:30%; position:absolute;">Check out my LinkedIn profile:</p>
 			
+			</div>
+
 		</div>
 		
-		
-		<!-- include script -->
-		
-	<script src="Scripts/main script.js"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		  <script src="Scripts/homepage script.js"></script>
+				
 	</body>
-		
 </html>
-		
