@@ -50,28 +50,17 @@
 				
 			</div>
 			
-			<!-- new area for feedback form -->
-			<div class="mainparagraph" style="font-size:22px; position:absolute; left:35%; height:10%; top:35%; width:30%; font-weight:bold; text-align:center;" >Feedback Form:</div>
+			<!-- new area for comment section -->
+			<div style="position:absolute; left: 5%; width:90%; height:50%; top:40%; background-color:#82c0cc;">
 			
-			
-			<div style="position:absolute; left: 30%; width:40%; height:50%; top:40%;">
-			  <form  method="post" enctype="text/plain" class="mainparagraph" style="position:absolute; width:100%; height:100%;background-color:#FFA62B;">
-
-				<label for="fname" class="formLabel" style="top:2%;">First Name</label>
-				<input type="text" id="fname" name="firstname" placeholder="Your name.." class="formInput" style="top:2%;">
-				<br><br>
-				<label for="lname" class="formLabel">Last Name</label>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name.." class="formInput">
-				<br><br>
-				<label for="email" class="formLabel">E-mail</label>
-				<input id="email" name="email" placeholder="Your e-mail address.." class="formInput">
-				<br><br>
-				<label for="message" class="formLabel">Message</label>
-				<textarea id="message" name="message" placeholder="If you'd like to contact me to offer some suggestions or provide feedback, please submit this form." class="formInput" style="height:60%; width:65%;"></textarea>
-
-				<input type="submit" value="Submit" style="position:absolute; top:90%; width:20%; left:40%; background-color:#489FB5; font-weight:bold;">
-
-			  </form>
+				<div style="position:absolute; width:70%; left:15%; height:100%;">
+					<!-- begin wwww.htmlcommentbox.com -->
+					 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML </a> is loading comments...</div>
+					 <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+					 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1597437051198");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+					<!-- end www.htmlcommentbox.com -->
+				</div>
+				
 			</div>
 			
 		<!-- new area for bottom bar -->
@@ -87,6 +76,26 @@
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		  <script src="Scripts/homepage script.js"></script>
+		  
+		  <!-- comment box styling -->
+		   <style>
+				#HCB_comment_box textarea {
+				top:20%;
+				height:20%;
+				width:100%;
+				}
+				
+				#HCB_comment_box .submit {
+				background:none; /* Clear twitter bootstrap style. */
+				background-color:#16697A;
+				border:none;
+				color: white;
+				}
+				#HCB_comment_box blockquote {
+				color:#16697A;
+				font-family:Arial, Helvetica, sans-serif;
+				}
+			</style>
 				
 	</body>
 </html>

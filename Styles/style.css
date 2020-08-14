@@ -250,25 +250,12 @@ h1{
   background-color: #FFA62B;
   color: #ffffff;
   transform: rotateY(180deg);
-}	
-
-/* labels for feedback form on homepage */	
-.formLabel
-{
-	width:30%; 
-	left:5%; 
-	position: absolute; 
-	display:inline;
-	text-align:left;
 }
 
-/* input fields for feedback form on homepage */
-.formInput
-{
-	width:50%;
-	left:30%;
-	position:absolute;
-	border: none;
-	color:#404040;
-}
-	
+ h3{
+	color:#FFFFFF; 
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-size:22px;
+	font-weight:bold;
+  }
