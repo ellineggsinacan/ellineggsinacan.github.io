@@ -1,23 +1,5 @@
 <!-- This is the homepage for my portfolio -->
 
-<?php
-  $first_name = $_POST['fname'];
-  $last_name = $_POST['lname'];
-  $visitor_email = $_POST['email'];
-  $message = $_POST['message'];
-  
- $email_from = 'ellineggsinacan@gmail.com';
- $email_subject = "Feedback received on your website";
-  $email_body = "You have received a new message from the user $first_name $last_name.\n".
-                            "Here is the message:\n $message".
-							
-   $to = "ellineggsinacan@gmail.com";
-   $headers = "From: $email_from \r\n";
-   $headers .= "Reply-To: $visitor_email \r\n";
-   
-   mail($to,$email_subject,$email_body,$headers);
-?>
-
 <!doctype html>													<!-- use latest version of html-->
 <html lang="en">
 	<head>
