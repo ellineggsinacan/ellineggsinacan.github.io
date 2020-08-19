@@ -45,20 +45,37 @@
 				<!-- new area for about me/descrption -->
 				<div style="position:absolute; width:100%; height:40%; font-size:20px;">
 				
-					<p class="mainparagraph" style=" position: absolute; top: 5%;">Hi, I'm Ellin, a BEng Electrical and Electronic Engineering student. I've spent some time developing an online portfolio to showcase some of my engineering adventures.<br><br>This website is an ongoing project, so some areas are incomplete for now. I plan to develop smaller coding projects on the website directly, make some of my external code available for download, and provide some additional information about myself. Everything you see on this website has been coded by myself in HTML and JavaScript. However, I've used other languages in my code that's been bundled into an executable.<br><br>Thanks for taking the time to browse!</p>
+					<p class="mainparagraph" style=" position: absolute; top: 5%;">Hi, I'm Ellin, a BEng Electrical and Electronic Engineering student. This is an online portfolio to showcase some of my engineering adventures.<br><br>This website is an ongoing project, so some areas are incomplete for now. I plan to develop smaller coding projects on the website directly, make some of my external code available for download, and provide some additional information about myself. Everything you see on this website has been coded by myself in HTML and JavaScript. However, I've used other languages in my downloadable projects.<br><br>Thanks for taking the time to browse!</p>
 						
 
 					
 				</div>
 				
 				<!-- new area for comment section -->
-				<div style="position:absolute; width:100%; height:60%; top:40%; background-color:#82c0cc;">
-						<!-- begin wwww.htmlcommentbox.com -->
-						 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML </a> is loading comments...</div>
-						 <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-						 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1597437051198");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-						<!-- end www.htmlcommentbox.com -->
+				<div style="position:absolute; width:100%; height:60%; top:40%; background-color:#FFA62B; border-radius:10% 10% 0% 0%;">
+					<p class="mainparagraph" style="color:#16697A; text-align:center; font-size:18px; font-weight:bold; position: absolute; width:100%; top:2%;">If you have some feedback for my site, please leave a comment below!</p>
 					
+				
+					<div style="position:absolute; width:100%; height:90%; top:10%; background-color:#82c0cc;">
+							
+							<!-- begin wwww.htmlcommentbox.com -->
+							 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+							 <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+							 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24l8Sr1hc%2FgL5mJENFNRL%2Fq0"+"&opts=16862&num=10&ts=1597837812487");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+							<!-- end www.htmlcommentbox.com -->
+							
+							<!-- section for login button -->
+							<div style="width:100%;height:6%;top:27%; position:absolute;">
+								<small class="admin-link" style="float:right; color:#404040;">Sign In
+									<a href="https://accounts.google.com/o/oauth2/auth?scope=email&amp;state=file%3A///C%3A/Users/Ellin/Desktop/Programming/HTML%2520v2/HTML%2520code/index.html&amp;redirect_uri=https%3A//www.htmlcommentbox.com%2Foauth2callback&amp;response_type=code&amp;client_id=1058610383547-jradgb7j4d5t6ia6dq8gaoh9fvgl01kb.apps.googleusercontent.com&amp;approval_prompt=force">
+										<img src="https://www.htmlcommentbox.com/static/images/door_in.png" alt="[login]" class="hcb-icon hcb-door-in">
+									</a>&nbsp;
+								</small>
+							</div>
+							
+						
+					</div>
+				
 				</div>
 			
 			</div>
@@ -80,7 +97,7 @@
 		  <!-- comment box styling -->
 		   <style>
 				#HCB_comment_box textarea {
-				top:21%;
+				top:10%;
 				height:15%;
 				width:50%;
 				left:25%;
@@ -95,17 +112,20 @@
 				position:absolute;
 				width:10%;
 				left:45%;
-				top:37%;
+				top:27%;
 				display:inline;
 				}
-				#HCB_comment_box blockquote {
+				
+				#HCB_comment_box{
 				color:#16697A;
 				font-family:Arial, Helvetica, sans-serif;
 				}
+				
 				input#hcb_form_name {
 				position: absolute;
 				width:20%;
 				left:25%;
+				top:1%;
 				font-family:Arial, Helvetica, sans-serif;
 				}
 				.btn.disabled{
@@ -115,14 +135,16 @@
 				left:55%;
 				visibility:hidden;
 				}
+				
 				.home-desc{
 				position:absolute;
 				left:60%;
 				width:20%;
 				height:10%;
 				top:40%;
-				display:none;
+				visibility:hidden;
 				}
+				
 				#no_comments{
 				position:absolute;
 				top:60%;
@@ -131,22 +153,35 @@
 				font-size:16px;
 				left:40%;
 				}
+				
 				.hcb-icon{
-				display:none;
+				left:50%;
+				top:50%;
+				visibility:hidden;
 				}
+				
+				.hcb-door-in{
+				visibility:visible;
+				}
+				
+				
 				a{
 				visibility:hidden;
 				}
+				
 				#comments_list{
 				position:absolute;
 				width:100%;
-				top:45%;
-				height:55%;
+				top:35%;
+				height:65%;
 				overflow-y:scroll;
 				}
+				
 				label{
 				visibility:hidden;
 				}
+				
+				
 				#hcb_msg{
 				font-family:Arial, Helvetica, sans-serif;
 				font-size: 20px;
@@ -157,22 +192,28 @@
 				top:20%;
 				text-align:center;
 				}
+				
 				.comment{
 				font-family:Arial, Helvetica, sans-serif;
 				color:#EDE7E3;
 				font-size:16px;
 				}
+				
 				.author, .author-name, .date{
 				font-family:Arial, Helvetica, sans-serif;
 				font-size:16px;
 				color:#EDE7E3;
 				}
-				h3{
-				color:#16697A; 
+				
+				blockquote{
 				font-family:Arial, Helvetica, sans-serif;
-				text-align:center;
-				font-size:22px;
-				font-weight:bold;
+				color:#16697A;
+				}
+				
+				h3{
+				top:0%;
+				position:absolute;
+				visibility:hidden;
 				}
 			</style>
 				
