@@ -251,3 +251,44 @@ h1{
   color: #ffffff;
   transform: rotateY(180deg);
 }
+
+/*pairs card scene */
+.pairsScene {
+  width: 6.88%;
+  height: 23.33%;
+  perspective: 600px;
+}
+
+/* pairs card */
+.pairsCard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.pairsCardFace {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.pairsCardFaceFront {
+  background: red;
+}
+
+.pairsCardFaceBack {
+  transform: rotateY( 180deg );
+}
+
+.pairsCardFlipped {
+  transform: rotateY(180deg);
+}
+
+.pairsCardImage{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}

@@ -1,4 +1,5 @@
 document.getElementById("cvTab").addEventListener("click", cv);
+document.getElementById("matchPairsSubmenu").addEventListener("click", matchPairs);
 document.getElementById("calculatorSubmenu").addEventListener("click", calculator);
 document.getElementById("downloadsTab").addEventListener("click", downloads);
 document.getElementById("homeTab").addEventListener("click", home);
@@ -24,6 +25,10 @@ var incorrectHistory = "";
 
  function calculator(){
 	 window.location.href = "calculator.html";
+ }
+ 
+  function matchPairs(){
+	 window.location.href = "match pairs.html";
  }
  
  function cv(){

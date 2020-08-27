@@ -2,6 +2,7 @@ document.getElementById("cvTab").addEventListener("click", cv);
 document.getElementById("downloadsTab").addEventListener("click", downloads);
 document.getElementById("homeTab").addEventListener("click", home);
 document.getElementById("hangmanSubmenu").addEventListener("click", hangman);
+document.getElementById("matchPairsSubmenu").addEventListener("click",matchPairs);
 
  function hangman(){
 	 window.location.href = "hangman.html";
@@ -17,6 +18,10 @@ document.getElementById("hangmanSubmenu").addEventListener("click", hangman);
  
   function home(){
 	 window.location.href = "../index.html";
+ }
+ 
+   function matchPairs(){
+	 window.location.href = "match pairs.html";
  }
  
 document.getElementById("delButton").addEventListener("click", deletechar);
