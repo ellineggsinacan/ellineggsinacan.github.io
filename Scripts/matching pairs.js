@@ -237,51 +237,59 @@ function matchCards()
 			
 		}
 		
-		//get the src of backImage for each of the cards
-		var cardImage1 = document.getElementById("backImage"+cardIndexes[0]).src;
-		var cardImage2 = document.getElementById("backImage"+cardIndexes[1]).src;
 		
-		//if the src for each is the same, increase the score
-		if(cardImage1 == cardImage2)
+		//ensure that the same card has not been clicked twice
+		if(cardIndexes[0] !== cardIndexes[1])
 		{
-			//check if all cards have been matched correctly
-			if(score ==11)
+			
+			console.log("not same card");
+		
+			//get the src of backImage for each of the cards
+			var cardImage1 = document.getElementById("backImage"+cardIndexes[0]).src;
+			var cardImage2 = document.getElementById("backImage"+cardIndexes[1]).src;
+			
+			//if the src for each is the same, increase the score
+			if(cardImage1 == cardImage2)
 			{
-				setTimeout(gameWon, 500);
+				//check if all cards have been matched correctly
+				if(score ==11)
+				{
+					setTimeout(gameWon, 500);
+				}
+				else
+				{
+					//increase score
+					score=score+1;
+					match = true;
+					
+					
+					//store which cards have already been matched
+					matchCard1 = "pairsCard"+cardIndexes[0];
+					matchCard2 = "pairsCard"+cardIndexes[1];
+					matchedCards.push(matchCard1, matchCard2);
+				}
+				
 			}
+			
+			//if the src for each is different, decrease the score
 			else
 			{
-				//increase score
-				score=score+1;
-				match = true;
+				//decrease score
+				lives = lives-1;
+				match = false;
 				
-				
-				//store which cards have already been matched
-				matchCard1 = "pairsCard"+cardIndexes[0];
-				matchCard2 = "pairsCard"+cardIndexes[1];
-				matchedCards.push(matchCard1, matchCard2);
+				//check how many lives are left
+				if(lives <= 0)
+				{
+					//game over
+					setTimeout(gameOver, 500);
+				}
 			}
 			
-		}
-		
-		//if the src for each is different, decrease the score
-		else
-		{
-			//decrease score
-			lives = lives-1;
-			match = false;
 			
-			//check how many lives are left
-			if(lives <= 0)
-			{
-				//game over
-				setTimeout(gameOver, 500);
-			}
+			document.getElementById("score").innerHTML = score;
+			document.getElementById("lives").innerHTML = lives;
 		}
-		
-		document.getElementById("score").innerHTML = score;
-		document.getElementById("lives").innerHTML = lives;
-		
 	}
 	cardIndexes = [];
 	
