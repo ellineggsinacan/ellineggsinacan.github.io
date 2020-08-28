@@ -5,9 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById("homeTab").addEventListener("click", home);
   document.getElementById("hangmanSubmenu").addEventListener("click", hangman);
   document.getElementById("matchPairsSubmenu").addEventListener("click",matchPairs);
+  document.getElementById("calculatorSubmenu").addEventListener("click",calculator);
 
    function hangman(){
   	 window.location.href = "hangman.html";
+   }
+
+   function calculator(){
+  	 window.location.href = "calculator.html";
    }
 
    function cv(){
