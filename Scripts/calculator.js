@@ -3,27 +3,32 @@ document.getElementById("downloadsTab").addEventListener("click", downloads);
 document.getElementById("homeTab").addEventListener("click", home);
 document.getElementById("hangmanSubmenu").addEventListener("click", hangman);
 document.getElementById("matchPairsSubmenu").addEventListener("click",matchPairs);
+document.getElementById("tetrisSubmenu").addEventListener("click",tetris);
 
  function hangman(){
 	 window.location.href = "hangman.html";
  }
- 
+
  function cv(){
 	 window.location.href = "cv.html";
  }
- 
+
   function downloads(){
 	 window.location.href = "downloads.html";
  }
- 
+
   function home(){
 	 window.location.href = "../index.html";
  }
- 
+
    function matchPairs(){
 	 window.location.href = "match pairs.html";
  }
- 
+
+ function tetris(){
+	 window.location.href = "tetris.html";
+ }
+
 document.getElementById("delButton").addEventListener("click", deletechar);
 
 document.getElementById("clrButton").addEventListener("click", clearhistory);
@@ -80,7 +85,7 @@ document.getElementById("3Button").addEventListener("click", function(){
 document.getElementById("0Button").addEventListener("click", function(){
   calculatorOperation("0");
   });
-  
+
 document.getElementById("delButton").disabled = true;	//start with all buttons disabled except ON
 document.getElementById("clrButton").disabled = true;
 document.getElementById("7Button").disabled = true;
@@ -105,7 +110,7 @@ document.getElementById("offButton").disabled = true;
 var fullEquation = "";
 
 function calculatorOperation(buttonValue){
-	
+
 	fullEquation = fullEquation + buttonValue;
 	document.getElementById("calcTopScreen").innerHTML = fullEquation;
 
@@ -132,7 +137,7 @@ function clearhistory()
 function poweron()
 {
 	document.getElementById("onButton").disabled = true;
-	
+
 	document.getElementById("offButton").disabled = false;
 	document.getElementById("delButton").disabled = false;	//start with all buttons disabled except ON
 	document.getElementById("clrButton").disabled = false;
@@ -159,7 +164,7 @@ function poweron()
 function poweroff()
 {
 	document.getElementById("offButton").disabled = true;
-	
+
 	document.getElementById("onButton").disabled = false;
 	document.getElementById("delButton").disabled = true;	//start with all buttons disabled except ON
 	document.getElementById("clrButton").disabled = true;

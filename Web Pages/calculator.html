@@ -6,22 +6,22 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../Styles/style.css" />		<!-- link style sheet for element styles -->
 	</head>
-		
+
 	<!-- start main body -->
 	<body>
-		
+
 		<title> Ellin's Portfolio</title>							<!-- set the title of the webpage that will appear in the tab -->
-				
+
 		<!-- new heading section -->
 		<div class="heading">
 
 			<h1> Simple Calculator </h> 				<!-- set main heading on page -->
-			
+
 		</div>
-		
+
 		<!-- new area for tab controls -->
 		<div class="tabs">
-		
+
 		<ul class="nav nav-tabs" style="position: absolute; width:100%; height:100%;">
 	    <li class="active tabbuttons"><a data-toggle="tab" id="homeTab">Home</a></li>
 	    <li class="tabbuttons"><a data-toggle="tab" id="cvTab">CV</a></li>
@@ -29,223 +29,223 @@
 		<li class="active dropdown tabbuttons">
 		<a class="dropdown-toggle" data-toggle="dropdown" id="miniProjectsTab">Mini Projects<span class="caret"></span></a>
 			<ul class="dropdown-menu subTabButtons">
-			<li class="active"><a id="calculatorSubmenu">Simple Calculator</a></li>    
+			<li class="active"><a id="calculatorSubmenu">Simple Calculator</a></li>
 			<li><a id="hangmanSubmenu">Hangman</a></li>
 			<li><a id="matchPairsSubmenu">Match Pairs</a></li>
+      <li><a id="tetrisSubmenu">Tetris</a></li>
 			</ul>
 		</li>
 	    </ul>
-		
+
 		</div>
-				
+
 		<!-- new main page area -->
 		<div class="mainarea" style="max-width:1920px; max-height:1080px;">
-		
+
 			<!-- new section for calculator background, 3d effect -->
-			
+
 			<div style="position:absolute; width:30%; min-width: 488px; height:85%; left:36%; top:5%; background-color:black; border-radius:10% 10% 10% 10%;">
 			</div>
-		
+
 			<!-- new section for calculator body -->
 			<div style="position:absolute; width:30%; min-width: 488px; height:85%; left:35%; top:4%; background-color:#8c8c8c; border-radius:10% 10% 10% 10%;">
-			
+
 				<!-- new area for solar panel bar 3d effect -->
 				<div style="position:absolute; width:70%; height:5%; left:14.5%; top:4.5%; background-color:black; border-radius: 15% 15% 15% 15%;">
 				</div>
-			
+
 				<!-- new area for solar panel bar at top -->
 				<div style="position:relative; width:70%; height:5%; left:15%; top:5%; background-color:#cc9900; border-radius: 15% 15% 15% 15%;">
-				
+
 					<!-- areas for solar panel texture -->
 					<div class="calculatorSolarPanelTexture" style="left:8.2%;">
 					</div>
-					
+
 					<div class="calculatorSolarPanelTexture" style="left:18.4%;">
 					</div>
-					
+
 					<div class="calculatorSolarPanelTexture" style="left:28.6%;">
 					</div>
-					
+
 					<div class="calculatorSolarPanelTexture" style="left:38.8%;">
-					</div>				
+					</div>
 
 					<div class="calculatorSolarPanelTexture" style="left:49%;">
-					</div>	
+					</div>
 
 					<div class="calculatorSolarPanelTexture" style="left:59.2%;">
-					</div>	
+					</div>
 
 					<div class="calculatorSolarPanelTexture" style="left:69.4%;">
-					</div>	
+					</div>
 
 					<div class="calculatorSolarPanelTexture" style="left:79.6%;">
-					</div>	
+					</div>
 
 					<div class="calculatorSolarPanelTexture" style="left:89.8%;">
-					</div>	
+					</div>
 
-				
+
 				<!-- end of solar panel area -->
 				</div>
-				
+
 				<!-- area for calculator screen 3d effect -->
 				<div style="position:absolute;width:80%; height:20%; top:14.3%; left:9.3%; background-color:black; border-radius:15% 15% 15% 15%;">
-					
-					
+
+
 				</div>
-					
+
 				<!-- area for calculator screen -->
 				<div style="position:absolute; width:80%; height:20%; top:15%; left:10%; background-color:#d3d6d9; border-radius:15% 15% 15% 15%;">
-					
+
 					<!-- text area for calculator result -->
 					<p  class ="calculatorResultArea" id="calcTopScreen"></p>
 					<p class="calculatorResultArea" style="top:50%;" id="calcBottomScreen"></p>
-					
-				</div>	
+
+				</div>
 
 				<!-- new area for calculator buttons (buttons have a width of 15%, height of 13%, a horizontal gap between of 8%, a vertical gap of 8.75%) -->
 				<div style="position:absolute; width:100%; top:37%; height:60%;">
-					
+
 					<!-- Area for DEL button 3d effect -->
 					<div class="calculatorButtons" style="left:8.5%; top:0.5%; background-color:black;"></div>
-					
+
 					<!-- Area for DEL button -->
 					<button class="calculatorButtons" style="left:8%;" id="delButton">DEL</button>
-					
+
 					<!-- Area for CLR button 3d effect -->
 					<div class="calculatorButtons" style="left:31.5%; top:0.5%; background-color:black;"></div>
-					
+
 					<!-- Area for CLR button -->
 					<button class="calculatorButtons" style="left:31%;" id="clrButton">CLR</button>
-					
+
 					<!-- Area for OFF button 3d effect -->
 					<div class="calculatorButtons" style="left:54.5%; top:0.5%; background-color:black;"></div>
-					
+
 					<!-- Area for OFF button -->
 					<button class="calculatorButtons" style="left:54%;" id="offButton">OFF</button>
-					
+
 					<!-- Area for ON button 3d effect -->
 					<div class="calculatorButtons" style="left:77.5%; top:0.5%; background-color:black;"></div>
-					
+
 					<!-- Area for ON button -->
 					<button class="calculatorButtons" style="left: 77%;" id="onButton">ON</button>
-					
+
 					<!-- Area for 7 button 3d effect -->
 					<div class="calculatorButtons" style="top:22.25%; left:8.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 7 button -->
 					<button class="calculatorButtons" style="top:21.75%; left:8%;" id="7Button">7</button>
-					
+
 					<!-- Area for 8 button 3d effect -->
 					<div class="calculatorButtons" style="top:22.25%; left:31.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 8 button -->
 					<button class="calculatorButtons" style="top:21.75%; left:31%;" id="8Button">8</button>
-					
+
 					<!-- Area for 9 button 3d effect -->
 					<div class="calculatorButtons" style="top:22.25%; left:54.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 9 button -->
 					<button class="calculatorButtons" style="top:21.75%; left:54%;" id="9Button">9</button>
-					
+
 					<!-- Area for / button 3d effect -->
 					<div class="calculatorButtons" style="top:22.25%; left:77.5%; background-color:black;"></div>
-					
+
 					<!-- Area for / button -->
 					<button class="calculatorButtons" style="top:21.75%; left:77%;" id="divButton">/</button>
-					
+
 					<!-- Area for 4 button 3d effect -->
 					<div class="calculatorButtons" style="top:44%; left:8.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 4 button -->
 					<button class="calculatorButtons" style="top:43.5%; left:8%;" id="4Button">4</button>
 
 					<!-- Area for 5 button 3d effect -->
 					<div class="calculatorButtons" style="top:44%; left:31.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 5 button -->
 					<button class="calculatorButtons" style="top:43.5%; left:31%;" id="5Button">5</button>
-				
+
 					<!-- Area for 6 button 3d effect -->
 					<div class="calculatorButtons" style="top:44%; left:54.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 6 button -->
 					<button class="calculatorButtons" style="top:43.5%; left:54%;" id="6Button">6</button>
-			
+
 					<!-- Area for X button 3d effect -->
 					<div class="calculatorButtons" style="top:44%; left:77.5%; background-color:black;"></div>
-					
+
 					<!-- Area for X button -->
 					<button class="calculatorButtons" style="top:43.5%; left:77%;" id="multButton">X</button>
-					
+
 					<!-- Area for 1 button 3d effect -->
 					<div class="calculatorButtons" style="top:66.25%; left:8.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 1 button -->
 					<button class="calculatorButtons" style="top:65.75%; left:8%;" id="1Button">1</button>
-					
+
 					<!-- Area for 2 button 3d effect -->
 					<div class="calculatorButtons" style="top:66.25%; left:31.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 2 button -->
 					<button class="calculatorButtons" style="top:65.75%; left:31%;" id="2Button">2</button>
-					
+
 					<!-- Area for 3 button 3d effect -->
 					<div class="calculatorButtons" style="top:66.25%; left:54.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 3 button -->
 					<button class="calculatorButtons" style="top:65.75%; left:54%;" id="3Button">3</button>
-					
+
 					<!-- Area for - button 3d effect -->
 					<div class="calculatorButtons" style="top:66.25%; left:77.5%; background-color:black;"></div>
-					
+
 					<!-- Area for - button -->
 					<button class="calculatorButtons" style="top:65.75%; left:77%;" id="minusButton">-</button>
-					
+
 					<!-- Area for . button 3d effect -->
 					<div class="calculatorButtons" style="top:88%; left:8.5%; background-color:black;"></div>
-					
+
 					<!-- Area for . button -->
 					<button class="calculatorButtons" style="top:87.5%; left:8%;" id="pointButton">.</button>
-					
+
 					<!-- Area for 0 button 3d effect -->
 					<div class="calculatorButtons" style="top:88%; left:31.5%; background-color:black;"></div>
-					
+
 					<!-- Area for 0 button -->
 					<button class="calculatorButtons" style="top:87.5%; left:31%;" id="0Button">0</button>
-					
+
 					<!-- Area for = button 3d effect -->
 					<div class="calculatorButtons" style="top:88%; left:54.5%; background-color:black;"></div>
-					
+
 					<!-- Area for = button -->
 					<button class="calculatorButtons" style="top:87.5%; left:54%;" id="equalButton">=</button>
-					
+
 					<!-- Area for + button 3d effect -->
 					<div class="calculatorButtons" style="top:88%; left:77.5%; background-color:black;"></div>
-					
+
 					<!-- Area for + button -->
 					<button class="calculatorButtons" style="top:87.5%; left:77%;" id="addButton">+</button>
 				<!--end of calculator buttons area -->
 				</div>
-					
+
 			<!-- end of calculator body -->
 			</div>
-			
+
 			<!-- new area for bottom bar -->
 			<div class="bottomBar" style="border solid black 1px;">
-			
+
 				<a href="https://www.linkedin.com/in/ellin-anegkana-60400a190/"><img src="../Images/linkedin.png" class="linkedin" id="linkedin"></a>
 				<p class="mainparagraph" style="font-size:16px; text-align:right; right:4.5%; top:30%; position:absolute;">Check out my LinkedIn profile:</p>
-			
+
 			</div>
-		
+
 		<!-- end of main area -->
 		</div>
-		
+
 		<script src="../Scripts/calculator.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		
+
 	</body>
 </html>
-		
