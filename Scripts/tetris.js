@@ -38,6 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
    const startButton = document.querySelector('#startButton');
    let score = 0;
    let moveInterval;
+   let keyEnabled = false;
+   let mainMusic = document.getElementById("tetrisMusic");
+   var justStarted = true;
+   let gameOverSound = document.getElementById("gameOverSound");
+   let scoreSound = document.getElementById("scoreSound");
+   mainMusic.loop = true;
 
    const colours = [
      '#FFA62B',
@@ -112,10 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
      //move shape periodically
      //moveInterval = setInterval(moveDown, 1000)
      function moveDown(){
-       undraw();
-       currentPosition = currentPosition + width;
-       draw();
-       freeze();
+       if(keyEnabled == true){
+         undraw();
+         currentPosition = currentPosition + width;
+         draw();
+         freeze();
+       }
      }
 
      //assign key codes and functions
@@ -162,40 +170,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
      //move the shape left unless it is already at the border
      function moveLeft(){
-       undraw();
-       const isAtLeftEdge = currentShape.some(index => (currentPosition + index)% 10 === 0 )
+       //first check that keys are enabled
+       if(keyEnabled == true){
+         undraw();
+         const isAtLeftEdge = currentShape.some(index => (currentPosition + index)% 10 === 0 )
 
-       if(!isAtLeftEdge)
-       {
-         currentPosition = currentPosition - 1;
+         if(!isAtLeftEdge)
+         {
+           currentPosition = currentPosition - 1;
 
+         }
+
+         if(currentShape.some(index => squares[currentPosition + index].classList.contains("taken")))
+         {
+           currentPosition = currentPosition +1;
+         }
+
+         draw();
        }
-
-       if(currentShape.some(index => squares[currentPosition + index].classList.contains("taken")))
-       {
-         currentPosition = currentPosition +1;
-       }
-
-       draw();
      }
 
      //move the shape right unless it is already at the border
      function moveRight(){
-       undraw();
-       const isAtRightEdge = currentShape.some(index => (currentPosition + index)% width === width - 1 )
+       if(keyEnabled == true){
+         undraw();
+         const isAtRightEdge = currentShape.some(index => (currentPosition + index)% width === width - 1 )
 
-       if(!isAtRightEdge)
-       {
-         currentPosition = currentPosition + 1;
+         if(!isAtRightEdge)
+         {
+           currentPosition = currentPosition + 1;
 
+         }
+
+         if(currentShape.some(index => squares[currentPosition + index].classList.contains("taken")))
+         {
+           currentPosition = currentPosition -1;
+         }
+
+         draw();
        }
-
-       if(currentShape.some(index => squares[currentPosition + index].classList.contains("taken")))
-       {
-         currentPosition = currentPosition -1;
-       }
-
-       draw();
      }
 
     //rotate to the next position for the shape
@@ -252,7 +265,16 @@ document.addEventListener('DOMContentLoaded', () => {
          moveInterval = setInterval(moveDown, 1000);
          nextRandomShape = Math.floor(Math.random()*theShapes.length);
          displayNextShape();
+
+        //check if the game is just starting
+        if (justStarted == true){
+          mainMusic.play();
+          keyEnabled = true;
+
+        }
        }
+
+       justStarted = false;
      })
 
      //add scoreDisplay
@@ -262,6 +284,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
          if(row.every(index => squares[index].classList.contains('taken'))){
 
+           //play score sound
+           scoreSound.play();
            score = score = score + 10;
            scoreDisplay.innerHTML = score;
 
@@ -281,11 +305,21 @@ document.addEventListener('DOMContentLoaded', () => {
      function gameOver(){
 
          if (currentShape.some(index=> squares[index+currentPosition].classList.contains('taken'))){
+           keyEnabled = false;
+           tetrisMusic.pause();
+           gameOverSound.play();
+
            scoreDisplay.innerHTML = 'end';
            clearInterval(moveInterval);
 
-           alert('Game Over!');
-           setInterval(reload, 1000);
+           //check that game over audio has finished playing
+           gameOverSound.onended = function()
+           {
+             var confirmBox = confirm('Game Over!');
+             if(confirmBox == true){
+               reload();
+             }
+           };
          }
      }
 

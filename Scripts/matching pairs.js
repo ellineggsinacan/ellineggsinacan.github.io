@@ -30,6 +30,8 @@ var lives = 20;
 var cardIndexes = [];
 var match = false;
 var matchedCards =[];
+let gameOverSound = document.getElementById("gameOverSound");
+let scoreSound = document.getElementById("scoreSound");
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -165,7 +167,6 @@ i = 1;
 
  //flips over the specified card
  function flipCard(){
-
 	currentID = jQuery(this).attr("id");
 
 	//while a card is being flipped, disable all other cards
@@ -247,8 +248,6 @@ function matchCards()
 		if(cardIndexes[0] !== cardIndexes[1])
 		{
 
-			console.log("not same card");
-
 			//get the src of backImage for each of the cards
 			var cardImage1 = document.getElementById("backImage"+cardIndexes[0]).src;
 			var cardImage2 = document.getElementById("backImage"+cardIndexes[1]).src;
@@ -265,6 +264,7 @@ function matchCards()
 				{
 					//increase score
 					score=score+1;
+          scoreSound.play();
 					match = true;
 
 
@@ -287,6 +287,7 @@ function matchCards()
 				if(lives <= 0)
 				{
 					//game over
+          gameOverSound.play();
 					setTimeout(gameOver, 500);
 				}
 			}
@@ -312,7 +313,7 @@ function gameWon()
 //game over message
 function gameOver()
 {
-	window.confirm("Game Over!");
+	alert("Game Over!");
 	location.reload();
 }
 

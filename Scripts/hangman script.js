@@ -13,6 +13,7 @@ document.getElementById("giveUpButton").addEventListener("click", giveup);
 document.getElementById("enterButton").disabled = true;
 document.getElementById("giveUpButton").disabled = true;
 
+
 var wordsArray = [];
 var buttonIds = ["famousPlacesButton", "filmsButton", "phrasesButton", "enterButton", "giveUpButton"];
 var activeWord;
@@ -22,6 +23,8 @@ var correctLetters = [];
 var requiredLetters = 0;
 var matchingIndices = [];
 var incorrectHistory = "";
+let lifeSound = document.getElementById("lifeSound");
+let correctSound = document.getElementById("correctSound");
 
 
  function calculator(){
@@ -122,13 +125,16 @@ var incorrectHistory = "";
 			 }
 
 			 else{
+         //show correct letter and play correct sounds
+        correctSound.play();
 				 correctLetters.push(letterGuessed);
 				 correctGuesses = correctGuesses + matchingIndices.length;
 			 }
 
 	 }
 	 else{
-
+     //play life lose sound and add a strike
+     lifeSound.play();
 		 incorrectGuesses++;
 
 		//add strikout areas
@@ -199,7 +205,6 @@ var incorrectHistory = "";
  function setWord()
  {
 	  activeWord = wordsArray[Math.floor(Math.random()*wordsArray.length)];
-	  console.log("active word is " + activeWord);
 
 	  //populate strikeout message area
 	  var strikeMessage = document.createElement("P");
