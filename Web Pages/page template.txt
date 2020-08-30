@@ -21,10 +21,10 @@
 		<div class="tabs">
 		
 		<ul class="nav nav-tabs" style="position: absolute; width:100%; height:100%;">
-	    <li class="active tabbuttons"><a data-toggle="tab" id="homeTab">Home</a></li>
+	    <li class="tabbuttons"><a data-toggle="tab" id="homeTab">Home</a></li>
 	    <li class="tabbuttons"><a data-toggle="tab" id="cvTab">CV</a></li>
-	    <li class="tabbuttons"><a data-toggle="tab" id="downloadsTab">Downloads</a></li>
-		<li class="tabbuttons"><a data-toggle="tab" id="miniProjectsTab">Mini Projects</a></li>
+	    <li class="tabbuttons"><a data-toggle="tab" id="downloadsTab">Projects</a></li>
+		<li class="tabbuttons"><a data-toggle="tab" id="miniProjectsTab">Apps and Games</a></li>
 	    	</ul>
 		
 		</div>

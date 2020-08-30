@@ -23,45 +23,44 @@ var correctLetters = [];
 var requiredLetters = 0;
 var matchingIndices = [];
 var incorrectHistory = "";
-let lifeSound = document.getElementById("lifeSound");
-let correctSound = document.getElementById("correctSound");
+let lifeSound = document.getElementById('lifeSound');
+let correctSound = document.getElementById('correctSound');
 
 
- function calculator(){
-	 window.location.href = "calculator.html";
+ function calculator() {
+	 window.location.href = 'calculator.html';
  }
 
- function tetris(){
-  window.location.href = "tetris.html";
+ function tetris() {
+  window.location.href = 'tetris.html';
  }
 
-  function matchPairs(){
-	 window.location.href = "match pairs.html";
- }
+function matchPairs () {
+  window.location.href = 'match pairs.html';
+}
 
- function cv(){
-	 window.location.href = "cv.html";
+ function cv() {
+	 window.location.href = 'cv.html';
  }
 
   function downloads(){
-	 window.location.href = "downloads.html";
+	 window.location.href = 'downloads.html';
  }
 
   function home(){
-	 window.location.href = "../index.html";
+	 window.location.href = '../index.html';
  }
 
- function phrases(){
-	 wordsArray=["a chip on your shoulder", "a dime a dozen", "a piece of cake", "back to square one", "barking up the wrong tree", "beating around the bush", "between a rock and a hard place", "two birds with one stone", "cry over spilt milk", "curiosity killed the cat", "burst your bubble", "elephant in the room", "excuse my french", "jack of all trades", "labour of love", "name and shame", "rack your brains", "take the mickey"];
+function phrases () {
+  wordsArray = ['a chip on your shoulder', 'a dime a dozen', 'a piece of cake', 'back to square one', 'barking up the wrong tree', 'beating around the bush', 'between a rock and a hard place',
+    'two birds with one stone', 'cry over spilt milk', 'curiosity killed the cat', 'burst your bubble', 'elephant in the room', 'excuse my french', 'jack of all trades', 'labour of love',
+    'name and shame', 'rack your brains', 'take the mickey'];
 
-	disableButtons(true, buttonIds.slice(0, 3))
-
-	disableButtons(false, buttonIds.slice(3));
-
-
-	 setWord();
-	 populatePlaceholderLetters()
- }
+  disableButtons(true, buttonIds.slice(0, 3))
+  disableButtons(false, buttonIds.slice(3));
+  setWord();
+  populatePlaceholderLetters();
+}
 
 
  function films(){

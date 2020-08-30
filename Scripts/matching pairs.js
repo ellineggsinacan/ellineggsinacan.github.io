@@ -264,6 +264,7 @@ function matchCards()
 				{
 					//increase score
 					score=score+1;
+          console.log("positive tone");
           scoreSound.play();
 					match = true;
 
