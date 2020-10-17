@@ -1,0 +1,96 @@
+<!doctype html>													<!-- use latest version of html-->
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../Styles/style.css" />		<!-- link style sheet for element styles -->
+	</head>
+
+	<!-- start main body -->
+	 <body>
+
+		<title> Ellin's Portfolio</title>							<!-- set the title of the webpage that will appear in the tab -->
+
+		<!-- new heading section -->
+		<div class="heading">
+
+			<h1> Slot Machine </h1> 				<!-- set main heading on page -->
+
+		</div>
+
+		<!-- new area for tab controls -->
+		<div class="tabs">
+
+		<ul class="nav nav-tabs" style="position: absolute; width:100%; height:100%;">
+	    <li class="tabbuttons"><a data-toggle="tab" id="homeTab">Home</a></li>
+	    <li class="tabbuttons"><a data-toggle="tab" id="cvTab">CV</a></li>
+	    <li class="tabbuttons active"><a data-toggle="tab" id="downloadsTab">Projects</a></li>
+		  <li class="tabbuttons"><a data-toggle="tab" id="miniProjectsTab">Apps and Games</a></li>
+	   </ul>
+
+		</div>
+
+		<!-- new main page area -->
+		<div class="mainarea">
+
+        <!-- area for image and game description -->
+        <div class="mainparagraph" style="position:absolute; height:20%; width:40%; left:30%; top:1%;"
+          <!-- area for image -->
+          <div style="width:30%; height:100%;">
+            <img src="../Images/slot machine.png" alt="Slot Machine Icon" width="100%" height="100%" style="border-radius:15% 15% 15% 15%; left:1%;"/>
+          </div>
+          <!-- area for description -->
+          <div style="left:32%; width:68%; height:100%; position:absolute; top:0; text-align:left; min-width:561px;">
+          <p style="font-size:18px;"><strong>Game Description:</strong><br>How lucky are you feeling? See if you can hit the bit jackpot!</p>
+          </div>
+        </div>
+
+        <!-- area for installation instructions -->
+        <div class="mainparagraph" style="width: 100%; height:20%; top:30%; position:absolute;">
+          <p class="mainparagraph" style=" position: relative; text-align:left; font-size:18px; color:#FFFFFF; left:1%;"><strong>Installation instructions:</strong></p>
+          <ol class="mainparagraph"; style="font-size:16px; text-align:left; color:#FFFFFF;" id = "instructions">
+            <li>Unzip the downloaded folder.</li>
+            <li>Navigate to Volume >> Install.exe and run the executable. If your PC displays an access prompt, accept and allow access to the installer.</li>
+            <li>The installer will now check whether your PC contains the necessary NI software to run the game.</li>
+            <li>After completing the installation, the application will run automatically.</li>
+          </ol>
+
+          <p class="mainparagraph" style=" position: relative; text-align:left; font-size:12px; color:#FFFFFF; left:1%;"><strong>Note: </strong>A suitable version of NI LabVIEW Run-Time Engine will be installed onto your PC to allow the application to run</p>
+        </div>
+        <!-- area for OS selection -->
+        <div style="width: 30%; height:40%; top:55%; left:35%; position:absolute;" class="mainparagraph">
+
+          <form>
+            <div style="height:8%; top:1%; width:50%; position:absolute; min-width:120px;">
+              <label for="OSchoice" style="font-size:16px;">Select your OS:</label>
+            </div>
+            <div style="left:50%; height:10%; width:50%; position:absolute; min-width:120px;">
+              <select id="OS" name="OS" style="background-color:#16697A; width:70%; height:100%;">
+                <option value="Windows">Windows 10</option>
+                <option value="Mac">MacOS 10.15</option>
+              </select>
+            </div>
+            <br><br><br>
+            <button type="button" style="background-color:#FFA62B; width:20%; height:25%; position:absolute; font-size:20px; left:40%; top:40%; min-width:103px; border-radius:10% 10% 10% 10%;">
+              <a href="../Downloads/Slot Machine Installer.zip" id="downloadFile" style="color:#FFFFFF;">Download</a>
+            </button>
+          </form>
+          <br><br>
+          <p style="font-size:12px; position:absolute; width:100%; height:10%; top:80%;"><strong>Note:</strong>This application may work on other Windows and MacOS versions. However, this is not guaranteed.</p>
+        </div>
+
+		<!-- new area for bottom bar -->
+			<div class="bottomBar">
+
+				<a href="https://www.linkedin.com/in/ellin-anegkana-60400a190/"><img src="../Images/linkedin.png" class="linkedin" id="linkedin"></a>
+				<p class="mainparagraph" style="font-size:16px; text-align:right; right:4.5%; top:30%; position:absolute;">Check out my LinkedIn profile:</p>
+
+			</div>
+
+		</div>
+
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		  <script src="../Scripts/slot machine.js"></script>
+
+	</body>
+</html>
