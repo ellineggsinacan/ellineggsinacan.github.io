@@ -43,7 +43,7 @@ h1{
 	width: 25%;
 	border-top: solid #82C0CC 2px;
 	border-left: solid #82C0CC 2px;
-	border:right:solid #82C0CC 2px;
+	border-right:solid #82C0CC 2px;
 	background-color: #82c0cc;
 	color:#ffffff;
 	font-family:Arial Black, Gadget, sans-serif;
@@ -330,4 +330,150 @@ h1{
 .centered img {
   width: 150px;
   border-radius: 50%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Position the slideshow container (needed to position the left and right arrows) */
+.slidesArea {
+  position: absolute;
+  width:20%;
+  height:60%;
+  left:40%;
+  top:10%;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+  width:100%;
+  height:100%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevImg,
+.nextImg {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextImg {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevImg:hover,
+.nextImg:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.slidesNumber {
+  color: #404040;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Container for image text */
+.caption-slidesArea {
+  text-align: center;
+  background: #FFFFFF;
+  padding: 2px 16px;
+  color:#404040;
+  font-family:Arial, Helvetica, sans-serif;
+  height:10%;
+  left:5%;
+  top: 92.5%;
+  width:100%;
+  min-width: 480px;
+  font-weight:bold;
+}
+
+.slideRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.slideColumn {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.slideDemo {
+  opacity: 0.6;
+}
+
+.slideActive,
+.slideDemo:hover {
+  opacity: 1;
+}
+
+.slideImg{
+}
+
+/* Style the links inside the sidenav */
+#joyConNav a {
+  position: absolute; /* Position them relative to the browser window */
+  left:32%; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 20%; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 2% 2% 0; /* Rounded corners on the top right and bottom right side */
+  text-align:center;
+  height:7.5%;
+  color:#404040;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#joyConNav a:hover {
+  left: 20%; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#leftJoyCon {
+  top: 10%;
+  background-color: #ff9400;
+  color:#404040;
+}
+
+#rightJoyCon {
+  top: 17.5%;
+  background-color:#ffaf40;
+}
+
+#sideRail {
+  top: 24.5%;
+  background-color: #ffc575;
+}
+
+#graph {
+  top: 31.5%;
+  background-color:#ffdeb0;
 }
