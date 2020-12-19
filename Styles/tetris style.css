@@ -6,7 +6,7 @@
   left:35%;
   min-width:240px;
   position:absolute;
-  background-color: #16697A;
+  background-color: #3C6E71;
   display:flex;
   flex-wrap: wrap;
   border: solid #FFFFFF 5px;
@@ -15,7 +15,7 @@
 .grid div{
   width:10%;
   height:5%;
-  border:solid #489FB5 1px;
+ border:solid #42777a 1px;
 }
 
 .tetrisShape{
@@ -24,7 +24,7 @@
 
 .taken{
   background-color: none;
-  border:none;
+  border: none;
 }
 
 .miniGrid{

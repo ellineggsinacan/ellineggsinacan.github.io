@@ -41,9 +41,9 @@
      inkscape:window-height="1017"
      id="namedview2079"
      showgrid="false"
-     inkscape:zoom="0.81565307"
-     inkscape:cx="173.98278"
-     inkscape:cy="455.33334"
+     inkscape:zoom="1.6313061"
+     inkscape:cx="263.48162"
+     inkscape:cy="382.74295"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -62,15 +62,12 @@
        id="image2087"
        x="0"
        y="0" />
-    <rect
-       style="opacity:0;fill:#00fe0d;fill-opacity:0.722892;stroke-width:0.608709"
-       id="rect2089"
-       width="26.972254"
-       height="19.616182"
-       x="286.88669"
-       y="383.74161"
-       onclick="nextImage()"
+    <path
+       style="opacity:0;fill:#ff170d;fill-opacity:0.582329;stroke:#ff170d;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.140562"
+       d="m 249.49333,174.70663 115.24508,-1.83902 -1.22602,204.13091 h -19.00318 l -0.99176,6.83076 -4.11788,6.28517 -10.40305,1.08366 -7.80229,-2.38404 -7.15209,-3.90114 -5.39376,-0.55834 -4.90404,-4.29104 -11.95362,0.613 -7.96907,7.35607 2.04555,0.99818 9.60156,-0.0787 0.61301,-4.29104 12.56661,-0.3065 v 13.17962 l -11.95361,0.3065 -0.3065,-3.37153 -7.96908,0.61301 -7.96907,-5.21055 4.90404,-10.11459 v 0 l 4.84765,-0.91257 17.12169,-1.08365 14.52092,4.55133 10.18633,3.90115 6.28517,-4.55134 -0.21673,-3.68441 -25.35744,0.43346 -61.11793,0.86692 z"
+       id="path849"
        onmouseover="this.style.opacity=1"
-       onmouseout="this.style.opacity=0" />
+       onmouseout="this.style.opacity=0"
+       onclick="nextImage()" />
   </g>
 </svg>

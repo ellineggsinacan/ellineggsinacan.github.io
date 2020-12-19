@@ -54,6 +54,8 @@ function showSlides (n) {
   slides[slideIndex - 1].style.display = 'block'
   captionText.innerHTML = captions[slideIndex - 1]
   instructionText.innerHTML = instructions[slideIndex - 1]
+  
+  console.log(slides);
 }
 
 //  decrement slide index before changing slide

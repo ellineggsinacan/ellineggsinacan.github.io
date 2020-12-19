@@ -263,13 +263,16 @@ document.addEventListener('DOMContentLoaded', () => {
        else{
          draw();
          moveInterval = setInterval(moveDown, 1000);
-         nextRandomShape = Math.floor(Math.random()*theShapes.length);
-         displayNextShape();
+         //nextRandomShape = Math.floor(Math.random()*theShapes.length);
+         //displayNextShape();
 
         //check if the game is just starting
         if (justStarted == true){
           mainMusic.play();
           keyEnabled = true;
+		  
+		  nextRandomShape = Math.floor(Math.random()*theShapes.length);
+          displayNextShape();
 
         }
        }
