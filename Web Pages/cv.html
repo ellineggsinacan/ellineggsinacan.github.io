@@ -3,6 +3,8 @@
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../Styles/style.css" />		<!-- link style sheet for element styles -->
+		<link rel="stylesheet" href="../Styles/cv.css" />	
+		<link rel="stylesheet" href="../Styles/mini-projects.css" />
 	</head>
 
 	<!-- start main body -->
@@ -34,55 +36,56 @@
 
 			<!-- new area for description -->
 			<div style="position:absolute; width:100%; height:5%;">
-			<p class="mainparagraph" style="font-size:22px; top:2%; text-align:center;">This is an online version of my CV. Alternatively, you can download the PDF.</p>
+			<p class="mainparagraph" style="font-size:22px; top:2%; text-align:center;">This is an online version of my CV. Alternatively, you can download the PDF below:</p>
 
-			<a href="../Downloads/Ellin Anegkana - CV download.pdf"><input type="image" src="../Images/download icon.jpg" style="position:absolute; width:3%; height:100%; left:48.5%"> </a>
+			<a href="../Downloads/Ellin Anegkana - CV download.pdf" style="position: absolute; width: 3%; left: 49%;">
+				<i class="fas fa-download download" style="font-size:50px; color: #3C6E71; width: 10%;"></i>
+			</a>
+			
 			</div>
 
 
 			<!-- new area for collapsible sections -->
-			<div style="position:absolute; width:95%; height:50%; top:15%; left:2.5%; max-width:1824px; min-width:729.6px; max-height:960px; min-height:386px;">
+			<div style="position:absolute; width:95%; height:80%; top:15%; left:2.5%; max-width:1824px; min-width:729.6px; max-height:960px; overflow:scroll;">
 
 				<!-- create collapsible for education -->
 				<button type="button" class="collapsible" style="border-radius:0% 0% 0 0;">Education</button>
-				<div class="content" style="height:85%; width:100%; position:absolute; min-height:328.1px; max-height:816px; min-width:729.6px; max-width:1824px;">
+				<div class="content" style="width:100%; max-height:816px; min-width:729.6px; max-width:1824px; height: 300px;">
 
 
 					<!-- flip card content for uni degree -->
-					<div style="position: absolute; width:32.67%; left:1%; height:100%; max-width:595.9px; min-width:238.36px; max-height:816px; min-height:328.1px;">
-							<div class="flip-card">
-							  <div class="flip-card-inner">
-								<div class="flip-card-front">
-								  <p class="mainparagraph" style="font-size:22px;">BEng Electrical and Electronic Engineering<br>(September 2017 – Present)</p>
-								  <br><br><br><br><br>
-								  <p class="mainparagraph" style="font-size:22px;">Turn over...</p>
-								</div>
-								<div class="flip-card-back">
-								  <p class="mainparagraph" style="font-size:16px; text-align:center;">
-								  <strong>Cardiff School of Engineering.<br>
-								  Queen’s Buildings, 14-17 The Parade, Cardiff, CF24 3AA.</strong><br>
-								  <br>
-								  A first was achieved for the duration of the first and second academic year. The course consisted of a variety of electrical principles and applications including network analysis, communication systems, applications of programming, further mathematics, practical laboratory sessions, technical report writing, power engineering, and machines and electromagnetics. The laboratory sessions explored the use of analogue and digital communications systems as well as software controlled circuits. As a result of competent technical report writing, I was shortlisted for an internship assessment for National Instruments.<br>
-								  </p>
-								</div>
-							  </div>
+					<div style="position:absolute; width:32.67%; height:100%; left:1%;">
+						<div class="flip-card">
+						  <div class="flip-card-inner">
+							<div class="flip-card-front">
+							  <p class="mainparagraph paragraphFront">BEng Electrical and Electronic Engineering <br>(September 2017 - June 2021)
+							  <br><br><br><br><br>Turn over...
+							  </p>
 							</div>
-					</div >
-
-
-					<!-- flip card content for college -->
-					<div style="position: absolute; width:32.67%; height:100%;left:33.67%;max-width:595.9px; min-width:238.36px; max-height:816px; min-height:328.1px;">
-							<div class="flip-card">
-							  <div class="flip-card-inner">
-								<div class="flip-card-front">
-								  <p class="mainparagraph" style="font-size:22px;">BTEC Extended Diploma in Engineering<br>(September 2015 – June 2017)</p>
-								</div>
-								<div class="flip-card-back">
-								  <p class="mainparagraph" style="font-size:16px; text-align:left;">
-								  <strong>Neath Port Talbot College.<br>
-								  Dwr-y-Felin Road, Neath, SA10 7RF.</strong><br>
-								  <br>
-								  Through achieving a distinction in every module, a final grade of Distinction*Distinction*Distinction* was awarded. Some of the completed modules include:
+							
+							<div class="flip-card-back">
+							   <p class="mainparagraph paragraphBack"><strong>Cardiff School of Engineering.<br>
+								Queen’s Buildings, 14-17 The Parade, Cardiff, CF24 3AA.</strong><br>
+								<br>
+								A first was achieved for the duration of the first and second academic year. The course consisted of a variety of electrical principles and applications including network analysis, communication systems, applications of programming, further mathematics, practical laboratory sessions, technical report writing, power engineering, and machines and electromagnetics. The laboratory sessions explored the use of analogue and digital communications systems as well as software controlled circuits. As a result of competent technical report writing, I was shortlisted for an internship assessment for National Instruments.<br>
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+					
+					<!-- flip card for college -->
+					<div style="position:absolute; width:32.67%; height:100%; left:33.67%;">
+						<div class="flip-card">
+						  <div class="flip-card-inner">
+							<div class="flip-card-front">
+							  <p class="mainparagraph paragraphFront">BTEC Extended Diploma in Engineering <br>(September 2015 - June 2017)
+							  </p>
+							</div>
+							
+							<div class="flip-card-back">
+							   <p class="mainparagraph paragraphBack"><strong>Dwr-y-Felin Road, Neath, SA10 7RF.</strong><br><br>
+									Through achieving a distinction in every module, a final grade of Distinction*Distinction*Distinction* was awarded. Some of the completed modules include:
 									<ul style="text-align:left;">
 										<li>Further Mathematics</li>
 										<li>Principles and Applications of Electronic Devices and Circuits</li>
@@ -90,48 +93,51 @@
 										<li>Computer Aided Drafting</li>
 										<li>Electro, Pneumatic and Hydraulic Systems and Devices</li>
 										<li>Primary Forming Processes</li>
-										<li>and others</li><br>
+										<li>and others</li>
 									</ul>
-								  </p>
-								</div>
-							  </div>
+								</p>
 							</div>
+						  </div>
+						</div>
 					</div>
-
-					<!-- flip card content for GCSEs -->
-					<div style="position: absolute; width:32.67%; height:100%; left:66.34%;max-width:595.9px; min-width:238.36px; max-height:816px; min-height:328.1px;">
+					
+					<!-- flip card for school -->
+					<div style="position:absolute; width:32.67%; height:100%; left:66.34%;">
 						<div class="flip-card">
 						  <div class="flip-card-inner">
 							<div class="flip-card-front">
-							  <p class="mainparagraph" style="font-size:22px;">GCSEs<br>June 2014</p>
+							  <p class="mainparagraph paragraphFront">GCSEs <br>(June 2014)
+							  </p>
 							</div>
+							
 							<div class="flip-card-back">
-							  <p class="mainparagraph" style="font-size:16px; text-align:left;">
-							  <strong>Dwr-Y-Felin Comprehensive School.<br>
-							  Dwr-Y-Felin Road, Neath, SA10 7RE.</strong><br>
-							  <br>A total of 9 GCSEs were attained including physics, biology, chemistry, and 2 languages.</p>
+							   <p class="mainparagraph paragraphBack"><strong>Dwr-Y-Felin Comprehensive School.<br>
+									 Dwr-Y-Felin Road, Neath, SA10 7RE.</strong><br>
+									<br>A total of 9 GCSEs were attained including physics, biology, chemistry, and 2 languages.
+								</p>
 							</div>
-							</div>
+						  </div>
 						</div>
 					</div>
+					
 				</div>
-
-
+				
 				<!-- create collapsible for employment -->
-				<button type="button" class="collapsible">Employment History</button>
-				<div class="content" style="height:70%; width:100%; position:absolute; min-width:729.6px; max-width:1824px; max-height:672px; min-height:270.2px;">
+				<button type="button" class="collapsible" >Employment History</button>
+				<div class="content" style="width:100%; min-width:729.6px; max-width:1824px; max-height:672px; height:250px;">
 
 					<!-- flipcard content for NI -->
 					<div style="position: absolute; width:32.67%; height:100%; left:1%;">
 						<div class="flip-card">
 						  <div class="flip-card-inner">
 							<div class="flip-card-front">
-							  <p class="mainparagraph" style="font-size:22px;">Technical Support Intern at National Instruments<br>(July 2019 – June 2020)</p>
-							  <br><br><br><br><br>
-							<p class="mainparagraph" style="font-size:22px;">Turn over...</p>
+							  <p class="mainparagraph paragraphFront">Technical Support Intern at National Instruments<br>(July 2019 – June 2020)</p>
+							  <br><br><br><br><br>Turn over...
+							  </p>
 							</div>
+							
 							<div class="flip-card-back">
-							  <p class="mainparagraph" style="font-size:16px; text-align:left;">
+							  <p class="mainparagraph paragraphBack">
 							  At National Instruments, my daily responsibilities involved working with other engineers to help resolve technical challenges that they were facing. This ranged from solving coding and software problems, to troubleshooting hardware and system connections.<br>During my time as an intern, I developed expertise in one of the company’s software products. As a result, I was given the opportunity to teach the subject to other colleagues, visit customers onsite to pitch and demonstrate the product and deliver technical presentations on the topic. In addition, I was involved with larger scale projects that allowed me to control and manage budgets, tasks, people and deadlines.
 							  </p>
 							</div>
@@ -144,14 +150,14 @@
 						<div class="flip-card">
 						  <div class="flip-card-inner">
 							<div class="flip-card-front">
-							  <p class="mainparagraph" style="font-size:22px;">Team Member at Screwfix<br>(January 2017 – August 2017)</p>
+							  <p class="mainparagraph paragraphFront">Team Member at Screwfix<br>(January 2017 – August 2017)</p>
 							</div>
-							<div class="flip-card-back">
-							  <p class="mainparagraph" style="font-size:16px; text-align:left;"> My role primarily focused on customer service. By appointing my previous experience in customer service positions, I focused my productivity on building customer satisfaction through developing rapport and trust.<br>Furthermore, by setting personal goals in research and additional training, I remained updated with product knowledge and hence, was able to drive the projected sales. I was provided with thorough training regarding health and safety, warehouse standards and delivery duties, which I am able to apply to other roles that demand similar responsibilities.
-							  </p>
+								<div class="flip-card-back">
+								  <p class="mainparagraph paragraphBack"> My role primarily focused on customer service. By appointing my previous experience in customer service positions, I focused my productivity on building customer satisfaction through developing rapport and trust.<br>Furthermore, by setting personal goals in research and additional training, I remained updated with product knowledge and hence, was able to drive the projected sales. I was provided with thorough training regarding health and safety, warehouse standards and delivery duties, which I am able to apply to other roles that demand similar responsibilities.
+								  </p>
+								</div>
 							</div>
 						</div>
-						  </div>
 					</div>
 
 					<!-- flip card content for mcdonald's -->
@@ -159,10 +165,10 @@
 						<div class="flip-card">
 						  <div class="flip-card-inner">
 							<div class="flip-card-front">
-							  <p class="mainparagraph" style="font-size:22px;">Crew Member at McDonald's<br>(June 2015 – August 2016)</p>
+							  <p class="mainparagraph paragraphFront">Crew Member at McDonald's<br>(June 2015 – August 2016)</p>
 							</div>
 							<div class="flip-card-back">
-							  <p class="mainparagraph" style="font-size:16px; text-align:left;"> During the period of employment, I learned the importance of maintaining a positive and professional image. Much of my work revolved around team collaboration and consulting with unsatisfied customers. This allowed me to improve my negotiation, analysis and team collaboration skills. Due to my efforts in the workplace, I was offered a promotion that granted me the ability to train other colleagues.
+							  <p class="mainparagraph paragraphBack"> During the period of employment, I learned the importance of maintaining a positive and professional image. Much of my work revolved around team collaboration and consulting with unsatisfied customers. This allowed me to improve my negotiation, analysis and team collaboration skills. Due to my efforts in the workplace, I was offered a promotion that granted me the ability to train other colleagues.
 							  </p>
 							</div>
 						  </div>
@@ -170,9 +176,10 @@
 					</div>
 				</div>
 
-				<button type="button" class="collapsible">Personal Achievements</button>
-				<div class="content" style="background-color:#3C6E71">
-					<p style="background-color:#3C6E71; color:#ffffff;">I am passionate about seizing opportunities both academically and other wise, and hence I was able to secure a Scholarship for my degree in Engineering at Cardiff University. As a result of my performance at University, my name was submitted to National Instruments as a recommendation. This lead to spending a year in industry working for National Instruments as a Technical Support Engineer.<br>
+				
+				<button type="button" class="collapsible" style="">Personal Achievements</button>
+				<div class="content" style="background-color:#284B63;">
+					<p style="background-color:#284B63; color:#ffffff;">I am passionate about seizing opportunities both academically and other wise, and hence I was able to secure a Scholarship for my degree in Engineering at Cardiff University. As a result of my performance at University, my name was submitted to National Instruments as a recommendation. This lead to spending a year in industry working for National Instruments as a Technical Support Engineer.<br>
 					<br>
 					In my first year of college, I was chosen to take part in a female STEM training activity, which spanned over 3 days. During these days, I was lucky enough to develop my interview skills, my professionalism and learn more about women in engineering and technology.<br>
 					<br>
@@ -183,7 +190,7 @@
 				</div>
 
 				<button type="button" class="collapsible" style="border-radius: 0 0 0% 0%;">Skills</button>
-				<div class="content" style="background-color:#3C6E71">
+				<div class="content" style="background-color:#284B63">
 					<ul style="color:#ffffff">
 					<li>Programming (including HTML, JavaScript, LabVIEW, C++ and Matlab)</li>
 					<li>Software and IT (including Solid Works, Circuit Wizard, COMSOL, MathCAD, DIAdem, TestStand and Veristand)</li>
@@ -213,6 +220,6 @@
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		  <script src="../Scripts/cv script.js"></script>
-
+		<script src="https://kit.fontawesome.com/5fac2d8065.js" crossorigin="anonymous"></script>
 	</body>
 </html>
